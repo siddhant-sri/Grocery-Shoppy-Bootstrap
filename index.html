@@ -1,0 +1,360 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shoppy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <style>
+        .highlight {
+            color: rgba(255, 94, 0, 0.842);
+        }
+        .brand-logo {
+            margin-left: -143px;
+        }
+        .btn-1 {
+            background-color: rgba(255, 94, 0, 0.842);
+        }
+        #home_tag {
+            margin-left: 130px;
+        }
+        .stars {
+            color: gold;
+            
+        }
+
+    </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="row">
+                        <div class="col-11">
+                            <h1>
+                                <span class="highlight">G</span>rocery <!-- highlight class -->
+                                <span class="highlight">S</span>hoppy  
+                            </h1>
+                        </div>
+                        <div class="brand-logo col-1"><!-- branlogo class-->
+                            <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/logo2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="row">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <span class="highlight fas fa-map-marker-alt"></span>
+                                <a href="#" class="text-decoration-none text-dark"> Shop Locator</a>
+                            </li>
+                            <li class="list-inline-item border-left">
+                                <span class="highlight fas fa-truck ml-4"></span>
+                                <a href="#" class="text-decoration-none text-dark"> Track Order</a>
+                            </li>
+                            <li class="list-inline-item border-left">
+                                <span class="highlight fas fa-phone ml-4"></span>
+                                <a href="#" class="text-decoration-none text-dark"> 001 234 5678</a>
+                            </li>
+                            <li class="list-inline-item border-left">
+                                <span class="highlight fas fa-unlock ml-4"></span>
+                                <a href="#" class="text-decoration-none text-dark"> Sign In</a>
+                            </li>
+                            <li class="list-inline-item border-left">
+                                <span class="highlight fas fa-edit ml-4"></span>
+                                <a href="#" class="text-decoration-none text-dark"> Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="text" placeholder="How can we help you today?" class="form-control border-dark">
+                            <div class="input-group-append">
+                                <a href="#" class="btn btn-info">
+                                    <span class="fas fa-search mt-1"></span>
+                                </a>
+                            </div>
+                            <div class="ml-5">
+                                <button class="btn-1 btn btn-lg">
+                                    <span class="text-white fas fa-cart-arrow-down"></span>
+                                </button><!-- btn-1 class -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Upper nav -->
+        <nav class="navbar navbar-expand-lg border rounded mx-2 my-3">
+            <div class="container">
+                <select class="nav-item bg-light border-0 p-2">
+                    <option>All Categories</option>
+                    <option>Kitchen</option>
+                    <option>Household</option>
+                    <option>Snacks & Beverages</option>
+                    <option>Personal Care</option>
+                    <option>Kitchen</option>
+                    <option>Household</option>
+                    <option>Snacks & Beverages</option>
+                    <option>Personal Care</option>
+                </select>
+                <a href="#" class="nav-item nav-link text-dark" id="home_btn">Home</a><!-- id_home_tag -->
+                <a href="#" class="nav-item nav-link text-dark">About Us</a>
+                <a href="#" class="nav-item nav-link text-dark dropdown-toggle">Kitchen </a>
+                <a href="#" class="nav-item nav-link text-dark dropdown-toggle">Household </a>
+                <a href="#" class="nav-item nav-link text-dark">FAQ</a>
+                <a href="#" class="nav-item nav-link text-dark dropdown-toggle">Pages </a>
+                <a href="#" class="nav-item nav-link text-dark">Contact</a>
+            </div>
+        </nav><!-- Secondary nav -->
+        <h1 class="text-center mt-5">Our Top Products</h1>
+        <hr class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 bg-light p-3">
+                    <div>
+                        <h4 class="highlight">Search Here</h4>
+                        <input type="text" placeholder=" Product Name" class="p-1 border-0">
+                        <button class="btn btn-info mb-1">
+                            <span class="fas fa-angle-right"></span>
+                        </button>
+                    </div>
+                        <hr color="#D3D3D3">
+                    <div>
+                        <h4 class="highlight">Price Range</h4>
+                        <p>$541 - $1000</p>
+                        <input type="range" class="custom-range">
+                    </div>
+                        <hr color="#D3D3D3">
+                    <div>
+                        <h4 class="highlight">Food Preference</h4>
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">Vegetarian</label><br>  
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">Non-Vegetarian</label>
+                    </div>
+                        <hr color="#D3D3D3">
+                    <div>
+                        <h4 class="highlight">Discount</h4>
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">5% or more</label><br>
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">10% or more</label><br>
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">20% or more</label><br>
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">30% or more</label><br>
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">40% or more</label><br>
+                        <input class="mb-0" type="checkbox"> <label class="mb-0">50% or more</label>
+                    </div>
+                    <hr color="#D3D3D3">
+                    <div>
+                        <h4 class="highlight">Customer Review</h4>
+                        <ul class="stars list-unstyled">
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-dark">5.0</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-dark">4.0</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-dark">3.5</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-dark">3.0</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-dark">2.5</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!--left side content  -->
+                <div class="col-8 shadow ml-4">
+                    <section>
+                        <h1 class="text-center my-3">Nuts</h1>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--first section -->
+                    <hr>
+                    <section>
+                        <h1 class="text-center my-3">Nuts</h1>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!-- second section -->
+                    <hr>
+                    <section>
+                        <h1 class="text-center my-3">Nuts</h1>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="col-4 text-center">
+                                <span>New</span>
+                                <div>
+                                    <a href="#">
+                                        <img src="file:///C:/Users/Micrsoft/Desktop/Bootstrap/Projects/GroceryStore/assets/images/m1.jpg" alt="nut">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="text-decoration-none">Quick View</a>
+                                    <p class="my-3">Almonds 100g</p>
+                                    <span>$149.00</span>
+                                    <del>$280.00</del>
+                                    <button class="btn btn-info btn-block m-2">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!-- third section -->
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
